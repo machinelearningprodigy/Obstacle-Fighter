@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="mainMenu">
+        <h1>Welcome to the Web Game</h1>
+        <button id="startButton">Start Game</button>
+        <button id="instructionsButton">Instructions</button>
+        <button id="difficultyButton">Difficulty Levels</button>
+        <button id="exitButton">Exit</button>
+    </div>
+
+    <div id="instructions" style="display: none;">
+        <h1>Game Instructions</h1>
+        <p>Use the arrow keys or WASD to move your character.</p>
+        <p>Avoid the red obstacles and score points by surviving as long as possible.</p>
+        <button id="backButton">Back to Menu</button>
+    </div>
+
+    <div id="difficultyMenu" style="display: none;">
+        <h1>Select Difficulty Level</h1>
+        <button id="easyButton">Easy</button>
+        <button id="mediumButton">Medium</button>
+        <button id="hardButton">Hard</button>
+        <button id="backButtonDifficulty">Back to Menu</button>
+    </div>
+
+    <canvas id="gameCanvas" width="800" height="600" style="display: none;"></canvas>
+
+    <div id="gameControls" style="display: none;">
+        <button id="pauseButton">Pause</button>
+        <button id="resumeButton" style="display: none;">Resume</button>
+        <button id="mainMenuButton">Main Menu</button>
+    </div>
+
+    <div id="quoteLeft" class="quote" style="display: none;"></div>
+    <div id="quoteRight" class="quote" style="display: none;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

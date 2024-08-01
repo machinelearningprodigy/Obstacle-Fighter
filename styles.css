@@ -1,0 +1,88 @@
+/* styles.css */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff4e50, #f9d423);
+    animation: changeBackground 10s infinite alternate;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+canvas {
+    border: 5px solid #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background: #222;
+}
+
+#mainMenu, #instructions, #difficultyMenu, #gameControls {
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #f9d423;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ff4e50;
+    color: #fff;
+}
+
+#gameControls {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.quote {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    animation: fade 5s infinite alternate;
+}
+
+#quoteLeft {
+    left: 10px;
+}
+
+#quoteRight {
+    right: 10px;
+}
+
+@keyframes changeBackground {
+    0% {
+        background: linear-gradient(135deg, #ff4e50, #f9d423);
+    }
+    50% {
+        background: linear-gradient(135deg, #1e90ff, #ff7f50);
+    }
+    100% {
+        background: linear-gradient(135deg, #32cd32, #ff6347);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
